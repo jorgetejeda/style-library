@@ -1,0 +1,174 @@
+$neutral0: #000000;
+$neutral1: #121212;
+$neutral2: #252525;
+$neutral3: #404040;
+$neutral4: #606060;
+$neutral5: #808080;
+$neutral6: #9F9F9F;
+$neutral7: #BFBFBF;
+$neutral8: #DFDFDF;
+$neutral9: #F5F5F5;
+$neutral10: #FFFFFF;
+
+$purple0: #401D75;
+$purple1: #522598;
+$purple2: #652EBA;
+$purple3: #7836DD;
+$purple4: #893EFF;
+$purple5: #A56CFF;
+$purple6: #C199FE;
+$purple7: #D7BDFF;
+$purple8: #ECE0FF;
+
+$lightBlue0: #003775;
+$lightBlue1: #004798;
+$lightBlue2: #0057BA;
+$lightBlue3: #0067DD;
+$lightBlue4: #0077FF;
+$lightBlue5: #449CFF;
+$lightBlue6: #88C0FF;
+$lightBlue7: #A8D1FF;
+$lightBlue8: #C9E2FF;
+
+$navy0: #000208;
+$navy1: #011625;
+$navy2: #062643;
+$navy3: #0C3661;
+$navy4: #11477E;
+$navy5: #17579C;
+$navy6: #1C67BA;
+$navy7: #508ED9;
+$navy8: #92BEF7;
+
+$red0: #751D1D;
+$red1: #982626;
+$red2: #BA2F2F;
+$red3: #DD3737;
+$red4: #FF4040;
+$red5: #FF5656;
+$red6: #FF6C6C;
+$red7: #FFA3A3;
+$red8: #FFDBDB;
+
+$green0: #09422A;
+$green1: #0E6540;
+$green2: #128755;
+$green3: #16AA6B;
+$green4: #1BCB80;
+$green5: #54DBA1;
+$green6: #8DE9C1;
+$green7: #ADF4D5;
+$green8: #CCFFEA;
+
+$orange0: #724118;
+$orange1: #95551F;
+$orange2: #B76826;
+$orange3: #DA7C2D;
+$orange4: #FC8F34;
+$orange5: #FCA85F;
+$orange6: #FCC189;
+$orange7: #FCD9B4;
+$orange8: #FCF2DE;
+
+$yellow0: #725609;
+$yellow1: #957117;
+$yellow2: #B78C25;
+$yellow3: #DAA632;
+$yellow4: #FCC140;
+$yellow5: #FCCD68;
+$yellow6: #FCDA8F;
+$yellow7: #FCE6B7;
+$yellow8: #FCF2DE;
+
+// theme
+$theme-light: var($neutral10);
+$theme-dark: var($neutral1);
+
+// additional colors
+$charcoal: #36434e;
+$cool-gray: #687177;
+$platinum: #e2e2e2;
+$applaudo-light-gray: #F5F5F5;
+$mid-gray: #c4c4c4;
+
+:root {
+
+  @each $color,
+  $valor in (neutral0:$neutral0,
+    neutral1:$neutral1,
+    neutral2:$neutral2,
+    neutral3:$neutral3,
+    neutral4:$neutral4,
+    neutral5:$neutral5,
+    neutral6:$neutral6,
+    neutral7:$neutral7,
+    neutral8:$neutral8,
+    neutral9:$neutral9,
+    neutral10:$neutral10,
+    purple0:$purple0,
+    purple1:$purple1,
+    purple2:$purple2,
+    purple3:$purple3,
+    purple4:$purple4,
+    purple5:$purple5,
+    purple6:$purple6,
+    purple7:$purple7,
+    purple8:$purple8,
+    lightBlue0:$lightBlue0, 
+    lightBlue1:$lightBlue1,
+    lightBlue2:$lightBlue2,
+    lightBlue3:$lightBlue3,
+    lightBlue4:$lightBlue4,
+    lightBlue5:$lightBlue5,
+    lightBlue6:$lightBlue6,
+    lightBlue7:$lightBlue7,
+    lightBlue8:$lightBlue8,
+    navy0:$navy0,
+    navy1:$navy1,
+    navy2:$navy2,
+    navy3:$navy3,
+    navy4:$navy4,
+    navy5:$navy5,
+    navy6:$navy6,
+    navy7:$navy7,
+    navy8:$navy8,
+    red0:$red0,
+    red1:$red1,
+    red2:$red2,
+    red3:$red3,
+    red4:$red4,
+    red5:$red5,
+    red6:$red6,
+    red7:$red7,
+    red8:$red8,
+    green0:$green0,
+    green1:$green1,
+    green2:$green2,
+    green3:$green3,
+    green4:$green4,
+    green5:$green5,
+    green6:$green6,
+    green7:$green7,
+    green8:$green8,
+    orange0:$orange0,
+    orange1:$orange1,
+    orange2:$orange2,
+    orange3:$orange3,
+    orange4:$orange4,
+    orange5:$orange5,
+    orange6:$orange6,
+    orange7:$orange7,
+    orange8:$orange8,
+    yellow0:$yellow0,
+    yellow1:$yellow1,
+    yellow2:$yellow2,
+    yellow3:$yellow3,
+    yellow4:$yellow4,
+    yellow5:$yellow5,
+    yellow6:$yellow6,
+    yellow7:$yellow7,
+    yellow8:$yellow8,
+  ) {
+    --gsus-#{$color}: #{$valor};
+  }
+}

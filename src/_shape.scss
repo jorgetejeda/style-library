@@ -1,0 +1,37 @@
+$shapes: ('extra-small': '4px',
+  'extra-large': '20px',
+  'full': '100px');
+
+@each $key,
+$value in $shapes {
+  .border-radius-#{$key} {
+    border-radius: #{$value}
+  }
+}
+
+$boxShadow: ('light-small': 0px 4px 12px rgba(0, 0, 0, 0.15),
+  'light-medium': 0px 4px 24px rgba(0, 0, 0, 0.1),
+  'dark-small': 0px 4px 12px rgba(0, 0, 0, 0.24),
+  'dark-medium': 10px 10px 24px rgba(0, 0, 0, 0.24),
+);
+
+@each $key,
+$value in $boxShadow {
+  .shadow-#{$key} {
+    box-shadow: #{$value};
+  }
+}
+
+$blur:(
+  'xsmall': '50px',
+  'small': '100px',
+  'medium': '200px',
+  'large': '250px'
+);
+
+@each $key,
+$value in $blur {
+  .lb-#{$key} {
+    filter: blur(#{$value})
+  }
+}

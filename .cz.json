@@ -1,0 +1,27 @@
+{
+  "path": "cz-conventional-changelog",
+  "emoji": true,
+  "disableScopeLowerCase": true,
+  "types": {
+    "✨ feat": {
+      "description": "A new feature",
+      "title": "Features"
+    },
+    "💄 style": {
+      "description": "Add or update the UI and style files.",
+      "title": "Styles"
+    },
+    "✅ test": {
+      "description": "Add, update, or pass tests.",
+      "title": "Tests"
+    },
+    "📦 packages": {
+      "description": "Add or update compiled files or packages",
+      "title": "Packages"
+    },
+    "📝 docs": {
+      "description": "Add or update documentation.",
+      "title": "Documentation"
+    }
+  }
+}

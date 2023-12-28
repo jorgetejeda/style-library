@@ -1,0 +1,25 @@
+@import 'assets/font/RemixIcon/remixicon.css';
+
+@font-face {
+  font-family: "Remixicon";
+  src: url("assets/fonts/RemixIcon/remixicon.woff") format("woff"),
+    url("assets/fonts/RemixIcon/remixicon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+$size-map: (xs: 1em, // equivalente a 16px
+  sm: 1.5em, // equivalente a 24px
+  m:2em, // equivalente a 32px
+  l:2.5em, // equivalente a 40px
+  xl:4em, // equivalente a 64px
+);
+
+@each $size,
+$value in $size-map {
+  .ri-#{$size} {
+    font-size: $value;
+  }
+}
